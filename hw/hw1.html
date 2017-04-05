@@ -150,7 +150,7 @@ $(document).ready(function () {
 </div>
 
 
-<p><em>Turning it in.</em> In general, homework assignments in this class will involve both short answers and coding. You’ll turn in your short answers in PDF form via Canvas. But your code will be ‘turned in’ by putting it in the <code>~/ling334/hw1/</code> folder, which you’ll create in problem 0, and running the command <code class="sourceCode bash"><span class="kw">chmod</span> -R g+r ~/ling334/hw1/</code> on the SSCC when you’ve finished.</p>
+<p><em>Turning it in.</em> In general, homework assignments in this class will involve both short answers and coding. You’ll turn in your short answers in PDF form via Canvas. But your code will be ‘turned in’ by putting it in the <code>~/ling334/hw1/</code> folder, which you’ll create in problem 0, and running the command <code class="sourceCode bash"><span class="kw">chmod</span> -R g+rX ~/ling334/hw1/</code> on the SSCC when you’ve finished.</p>
 <div id="general" class="section level1">
 <h1>General</h1>
 <ul>
@@ -171,7 +171,7 @@ $(document).ready(function () {
 <span class="kw">mkdir</span> ~/ling334/project</code></pre></div>
 <p>This is where you’ll save your homework code that I will grade. So that I have access, next, set the permissions as follows:</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">chmod</span> g=x <span class="ot">$HOME</span>
-<span class="kw">chmod</span> -R g=rx ~/ling334</code></pre></div></li>
+<span class="kw">chmod</span> -R g=rX ~/ling334</code></pre></div></li>
 <li><p><strong>Editing files.</strong> Using <code class="sourceCode bash"><span class="kw">nano</span></code> (or your linux editor of choice like <code class="sourceCode bash"><span class="kw">emacs</span></code> or <code class="sourceCode bash"><span class="kw">vi</span></code>), create a file called <code>aboutme.txt</code> in your new <code>ling334/hw1/</code> directory. In this file, answer the following questions about yourself:</p>
 <ul>
 <li>What is your linguistics background?</li>
@@ -238,6 +238,10 @@ sockdologizing</code></pre>
 brown_filename <span class="op">=</span> nltk.data.path[<span class="dv">0</span>] <span class="op">+</span> <span class="st">&quot;/corpora/brown/brown_all.txt&quot;</span></code></pre></div>
 <p>Now, <code class="sourceCode python">brown_filename</code> is a string that you can use as the path to the corpus when calling <code class="sourceCode python"><span class="bu">open</span></code> to read the file.</p></li>
 </ol>
+</div>
+<div id="finally" class="section level1">
+<h1>Finally</h1>
+<p>Remember to run the command <code class="sourceCode bash"><span class="kw">chmod</span> -R g+rX ~/ling334/hw1/</code> on the SSCC when you’ve made your final edits! (as indicated at the top of this page)</p>
 </div>
 
 

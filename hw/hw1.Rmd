@@ -6,7 +6,7 @@ output:
     highlight: pygments
 ---
 
-_Turning it in._ In general, homework assignments in this class will involve both short answers and coding. You'll turn in your short answers in PDF form via Canvas. But your code will be 'turned in' by putting it in the `~/ling334/hw1/` folder, which you'll create in problem 0, and running the command `chmod -R g+r ~/ling334/hw1/`{.bash} on the SSCC when you've finished.
+_Turning it in._ In general, homework assignments in this class will involve both short answers and coding. You'll turn in your short answers in PDF form via Canvas. But your code will be 'turned in' by putting it in the `~/ling334/hw1/` folder, which you'll create in problem 0, and running the command `chmod -R g+rX ~/ling334/hw1/`{.bash} on the SSCC when you've finished.
 
 # General
 
@@ -31,7 +31,7 @@ _Turning it in._ In general, homework assignments in this class will involve bot
 
     ```bash
     chmod g=x $HOME
-    chmod -R g=rx ~/ling334
+    chmod -R g=rX ~/ling334
     ```
 
 1. **Editing files.** Using `nano`{.bash} (or your linux editor of choice like `emacs`{.bash} or `vi`{.bash}), create a file called `aboutme.txt` in your new `ling334/hw1/` directory. In this file, answer the following questions about yourself:
@@ -50,7 +50,7 @@ _Turning it in._ In general, homework assignments in this class will involve bot
 
     This will return each match on a separate line. As in class, we can pipe the output of `egrep`{.bash} to `wc`{.bash} to count the number of matches.
 
-    Using this method, you'll count the number of times each of a list of words occurs in the Brown corpus. The full Brown corpus can be found in one file at `$NLTK_DATA/corpora/brown/brown_all.txt`{.bash}. (`$NLTK_DATA`{.bash} is a variable that was defined when you followed the class's nltk setup instructions.) Make sure your regular expressions:
+    Using this method, you'll count the number of times each of a list of words occurs in the Brown corpus. The full Brown corpus can be found in one file at `$NLTK_DATA/corpora/brown/brown_all.txt`{.bash}. (`$NLTK_DATA`{.bash} is a variable that was defined when you followed the class's nltk setup instructions, and is available only from the terminal, not from python.) Make sure your regular expressions:
     
     * only count whole words ('she' should not be counted for the word 'he')
     * ignore word-initial capitalization ('She' and 'she' should both be counted)
@@ -113,4 +113,7 @@ _Turning it in._ In general, homework assignments in this class will involve bot
     ```
 
     Now, `brown_filename`{.python} is a string that you can use as the path to the corpus when calling `open`{.python} to read the file.
-    
+
+# Finally
+
+Remember to run the command `chmod -R g+rX ~/ling334/hw1/`{.bash} on the SSCC when you've made your final edits! (as indicated at the top of this page)
