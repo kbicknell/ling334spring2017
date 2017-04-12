@@ -10,7 +10,7 @@ This procedure will change your user configuration on the SSCC so that (a) pytho
 
 1. Login to the SSCC and copy the following command (exactly) into your terminal window. (Copy and paste is recommended for all of these.)
     ```bash
-    cat ~kob734/profile_for_334 >> ~/.bash_profile
+    cat ~kob734/profile_for_334 >> ~/.bashrc
     ```
 Then push enter. No output will be displayed. Now `logout`{.bash} and then log in to the SSCC again so these changes will take effect.
 
