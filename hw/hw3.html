@@ -157,7 +157,7 @@ $(document).ready(function () {
 <li><p><strong>Using the SRILM toolkit for <span class="math inline">\(n\)</span>-gram modeling</strong> [Written answers only]</p>
 <p>In the previous homework, you wrote your own python code to train and evaluate <span class="math inline">\(n\)</span>-gram models, both using maximum likelihood estimation and using basic add-<span class="math inline">\(\delta\)</span> smoothing. In practice, <span class="math inline">\(n\)</span>-gram models are popular enough that there are great off-the-shelf implementations so you don’t have to code them yourself. These libraries also allow you to use more sophisticated smoothing techniques, which can be somewhat tricky even for advanced programmers to implement.</p>
 <p>For this problem, you’ll learn how to use the SRILM toolkit to train and evaluate <span class="math inline">\(n\)</span>-gram models. The SRILM toolkit contains two programs that are useful for this: <code class="sourceCode bash"><span class="kw">ngram-count</span></code> estimates models (mostly) and <code class="sourceCode bash"><span class="kw">ngram</span></code> applies and evaluates models (mostly). To use these programs, you’ll need to add them to your path. To do that, run</p>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">cat</span> ~kob734/add_srilm_to_path <span class="kw">&gt;&gt;</span> ~/.bash_profile</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">cat</span> ~kob734/add_srilm_to_path <span class="kw">&gt;&gt;</span> ~/.bashrc</code></pre></div>
 <p>and then <code>logout</code> and log back in. To make sure it worked, run <code>ngram -version</code> and make sure that it outputs <code>SRILM release 1.7.0 (with third-party contributions)</code> (plus lots more stuff afterward).</p>
 <p>Now, we’ll use <code class="sourceCode bash"><span class="kw">ngram-count</span></code> to estimate a bigram model with add-<span class="math inline">\(\delta\)</span> smoothing, as you did in your homework. To do this, run the following command from your <code>ling334/hw3/</code> directory (the backslashes just continue the command on a new line):</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">ngram-count</span> \
@@ -402,7 +402,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

@@ -17,7 +17,7 @@ _Turning it in._ You'll turn in your short answers in PDF form via Canvas. Your 
     
     For this problem, you'll learn how to use the SRILM toolkit to train and evaluate $n$-gram models. The SRILM toolkit contains two programs that are useful for this: `ngram-count`{.bash} estimates models (mostly) and `ngram`{.bash} applies and evaluates models (mostly). To use these programs, you'll need to add them to your path. To do that, run
     ```bash
-    cat ~kob734/add_srilm_to_path >> ~/.bash_profile
+    cat ~kob734/add_srilm_to_path >> ~/.bashrc
     ```
     and then `logout` and log back in. To make sure it worked, run `ngram -version` and make sure that it outputs `SRILM release 1.7.0 (with third-party contributions)` (plus lots more stuff afterward).
     
